@@ -1,0 +1,18 @@
+#ifndef _WTPROT_PLATFORM_H
+#define _WTPROT_PLATFORM_H
+
+#define WTPROT_PLATFORM_WINDOWS 1
+#define WTPROT_PLATFORM_UNIX 2
+#define WTPROT_PLATFORM_ESPIDF 3
+
+#ifndef WTPROT_PLATFORM
+    #ifdef ESP_PLATFORM
+        #define WTPROT_PLATFORM WTPROT_PLATFORM_ESPIDF
+    #elif defined(WIN32) || defined(_WIN32)
+        #define WTPROT_PLATFORM WTPROT_PLATFORM_WINDOWS
+    #else
+        #define WTPROT_PLATFORM WTPROT_PLATFORM_UNIX
+    #endif
+#endif
+
+#endif // _WTPROT_PLATFORM_H
