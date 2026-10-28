@@ -1,0 +1,19 @@
+{
+  "name": "wtprot",
+  "version": "0.1.0",
+  "description": "Wettorion network protocol / packet library",
+  "keywords": ["wettorion", "network", "packet", "protocol"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ProjectP/wtprot.git"
+  },
+  "authors": [
+    {
+      "name": "EnWaffel",
+      "url": "https://github.com/EnWaffel"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": ["*"],
+  "platforms": ["*"]
+}
